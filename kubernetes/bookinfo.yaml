@@ -34,7 +34,7 @@ spec:
         ports:
         - containerPort: 9080
       - name: servicereg
-        image: amalgam8/a8-sidecar:0.1
+        image: amalgam8/a8-sidecar:0.1-alpine
         imagePullPolicy: IfNotPresent
         args:
           - --proxy=false
@@ -80,7 +80,7 @@ spec:
         ports:
         - containerPort: 9080
       - name: servicereg
-        image: amalgam8/a8-sidecar:0.1
+        image: amalgam8/a8-sidecar:0.1-alpine
         imagePullPolicy: IfNotPresent
         args:
           - --proxy=false
@@ -126,7 +126,7 @@ spec:
         ports:
         - containerPort: 9080
       - name: serviceproxy
-        image: amalgam8/a8-sidecar:0.1
+        image: amalgam8/a8-sidecar:0.1-alpine
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 6379
@@ -172,7 +172,7 @@ spec:
         ports:
         - containerPort: 9080
       - name: serviceproxy
-        image: amalgam8/a8-sidecar:0.1
+        image: amalgam8/a8-sidecar:0.1-alpine
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 6379
@@ -218,7 +218,7 @@ spec:
         ports:
         - containerPort: 9080
       - name: serviceproxy
-        image: amalgam8/a8-sidecar:0.1
+        image: amalgam8/a8-sidecar:0.1-alpine
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 6379
@@ -264,7 +264,7 @@ spec:
         ports:
         - containerPort: 9080
       - name: serviceproxy
-        image: amalgam8/a8-sidecar:0.1
+        image: amalgam8/a8-sidecar:0.1-alpine
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 6379
